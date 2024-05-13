@@ -2,4 +2,92 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'sans-serif';
 }
+
+:root {
+    --BG-COLOR: #fbfbfb;
+    --ACCENT-COLOR: #0891b2;
+}
+
+body {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+
+    /* multiple gradients as to not have blurry line */
+    background:
+        linear-gradient(165deg, var(--ACCENT-COLOR) 250px, var(--BG-COLOR) 251px),
+        linear-gradient(180deg, var(--BG-COLOR) 250px, var(--BG-COLOR) 251px)
+    ;
+    background-size:
+        100% 100vh,
+        100% 100%
+    ;
+    background-repeat: no-repeat;
+}
+
+/* HEADER SECTION (about me) --------------------------------------------------*/
+
+header {
+    max-width: 700px;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img-container {
+    position: relative;
+    margin: 15px;
+}
+
+.img-container  picture  img {
+    max-width: 300px;
+    display: block;
+    /* shape-outside: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%); */
+}
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: var(--BG-COLOR);
+}
+.about-me h1,
+.about-me p {
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--BG-COLOR);
+
+    position: absolute;
+
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.socials {
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.socials a img {
+    width: 32px;
+}
+
+/* MAIN SECTION (my work) --------------------------------------------------*/
+
+
+
+/* FOOTER SECTION (contact me) --------------------------------------------------*/
