@@ -252,4 +252,8 @@ footer .container picture img {
         justify-content: flex-start;
         font-size: calc(1.5rem + 0vw);
     }
+    footer picture {
+        display: flex;
+        justify-content: flex-end;
+    }
 }
