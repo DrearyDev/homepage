@@ -232,7 +232,48 @@
     </main>
 
     <footer>
-        
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+
+                <p>
+                Please get in touch if you think our work could be mutually beneficial!
+                </p>
+
+                <address class="location">
+                    1234 Random Road <br>
+                    Random Town, California 12345
+
+                    <div class="phone">555-555-5555</div>
+                </address>
+
+                <div class="socials">
+                    <!--
+                        I dont have a linkedin or Email so those links are for display only
+                    -->
+                    <a href="https://github.com/DrearyDev/homepage" target="_blank" title="my github profile (opens in new tab)">
+                        <img src=<%=require("../icons/github.svg")%> alt="github">
+                    </a>
+
+                    <a href="#linkedin" target="_blank" title="my linkedin account (opens in new tab)">
+                        <img src=<%=require("../icons/linkedin.svg")%> alt="linkedin">
+                    </a>
+
+                    <a href="#email" target="_blank" title="my email (opens in new tab)">
+                        <img src=<%=require("../icons/email.svg")%> alt="email">
+                    </a>
+                </div>
+            </div>
+
+            <picture>
+                <source
+                        media="(width >= 1000px)"
+                        srcset=<%=require("../images/dev_side_shot_landscape_6000w.jpg")%>
+                >
+
+                <img src=<%=require("../images/dev_side_shot_portrait_3000w.jpg")%> alt="">
+            </picture>
+        </div>
     </footer>
   
 </body>
