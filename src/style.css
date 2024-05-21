@@ -211,3 +211,44 @@ footer .container picture img {
     max-width: 500px;
 }
 
+/* TABLET RESPONSIVENESS --------------------------------------------------*/
+
+@media screen and (width >= 800px) {
+    footer {
+        padding: 15px;
+    }
+    footer .container {
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    footer .container .contact-info {
+        font-size: calc(1.2rem + 0vw);
+    }
+    footer .container .contact-info,
+    footer .container picture {
+        padding: 0px;
+        width: 50%;
+    }
+    footer .container .contact-info h2,
+    footer .container .contact-info .socials {
+        justify-content: flex-start;
+        font-size: calc(1.5rem + 0vw);
+    }
+}
+
+/* DESKTOP RESPONSIVENESS --------------------------------------------------*/
+
+@media screen and (width >= 1000px) {
+    footer .container {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    footer .container .contact-info {
+        padding: 0px;
+        font-size: calc(1.2rem + 0vw);
+    }
+    footer .container .contact-info h2 {
+        justify-content: flex-start;
+        font-size: calc(1.5rem + 0vw);
+    }
+}
