@@ -100,9 +100,9 @@ main {
 
 .projects {
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     justify-items: center;
     gap: 50px;
 }
@@ -167,7 +167,8 @@ footer {
     background-color: var(--ACCENT-COLOR);
 }
 footer .container {
-    max-width: 1500px;
+    width: 100%;
+    max-width: 1200px;
 
     flex-wrap: wrap;
     justify-content: center;
