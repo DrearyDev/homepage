@@ -31,7 +31,13 @@ body {
 /* HEADER SECTION (about me) --------------------------------------------------*/
 
 header {
+    width: 100%;
     padding: 15px;
+
+    display: flex;
+    justify-content: center;
+}
+header .container {
     max-width: 700px;
 
     display: flex;
@@ -40,12 +46,15 @@ header {
 }
 
 .img-container {
+    max-width: 300px;
     position: relative;
     margin: 15px;
 }
-
+.img-container picture {
+    width: 100%;
+}
 .img-container  picture  img {
-    max-width: 300px;
+    width: 100%;
     display: block;
     /* shape-outside: polygon(100% 0%, 0% 0%, 0% 100%, 100% 100%); */
 }
@@ -215,6 +224,47 @@ footer .container picture img {
 /* TABLET RESPONSIVENESS --------------------------------------------------*/
 
 @media screen and (width >= 800px) {
+    body {
+        background:
+        linear-gradient(165deg, var(--ACCENT-COLOR) 350px, var(--BG-COLOR) 351px),
+        linear-gradient(180deg, var(--BG-COLOR) 350px, var(--BG-COLOR) 351px)
+        ;
+        background-size:
+        100% 100vh,
+        100% 100%
+        ;
+        background-repeat: no-repeat;
+    }
+
+    header .container {
+        max-width: 1200px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    header .container .img-container {
+        max-width: 300px;
+        margin: 0px;
+        float: left;
+    }
+    .img-container .name {
+        font-size: 3rem;
+    }
+    header .container .about-me {
+        box-shadow: 0px 0px 29px -10px rgba(0,0,0,0.75);
+        max-width: 700px;
+        padding: 15px;
+        align-items: flex-start;
+        font-size: 1.1rem;
+    }
+    header .container .about-me h1,
+    header .container .about-me p {
+        margin-bottom: 20px;
+    }
+    header .container .about-me .socials {
+        justify-content: flex-end;
+    }
+
     footer {
         padding: 15px;
     }
