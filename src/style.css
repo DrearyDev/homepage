@@ -290,6 +290,46 @@ footer .container picture img {
 /* DESKTOP RESPONSIVENESS --------------------------------------------------*/
 
 @media screen and (width >= 1000px) {
+    body {
+        background:
+        linear-gradient(165deg, var(--ACCENT-COLOR) 550px, var(--BG-COLOR) 551px),
+        linear-gradient(180deg, var(--BG-COLOR) 550px, var(--BG-COLOR) 551px)
+        ;
+        background-size:
+        100% 100vh,
+        100% 100%
+        ;
+        background-repeat: no-repeat;
+    }
+
+    header .container {
+        max-width: 1200px;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 50px;
+    }
+    header .container .img-container {
+        max-width: 500px;
+        margin: 0px;
+    }
+    .img-container .name {
+        font-size: 3.5rem;
+    }
+    header .container .about-me {
+        box-shadow: 0px 0px 29px -10px rgba(0,0,0,0.75);
+        max-width: 700px;
+        padding: 15px;
+        font-size: 1.3rem;
+        align-items: flex-start;
+    }
+    header .container .about-me h1,
+    header .container .about-me p {
+        margin-bottom: 20px;
+    }
+    header .container .about-me .socials {
+        justify-content: flex-end;
+    }
+
     footer .container {
         flex-wrap: nowrap;
         justify-content: space-between;
